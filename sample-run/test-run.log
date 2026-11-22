@@ -1,0 +1,51 @@
+[2026-11-22T18:49:56.371Z] === Test run started: 1 test(s), 1 worker(s) ===
+[2026-11-22T18:49:56.847Z] --- TEST START: mobile-chromium > get-started.smoke.spec.ts > Trajector Medical smoke test (mobile) > home page -> Get Started -> fill form (no submit)
+[2026-11-22T18:49:57.310Z]   step: Launch browser (433ms)
+[2026-11-22T18:49:57.320Z]   step: Create context (7ms)
+[2026-11-22T18:49:57.638Z]   step: Create page (314ms)
+[2026-11-22T18:49:57.646Z] [INFO] [home page -> Get Started -> fill form (no submit)] Generated form data: {"servedMilitary":"Yes","vaRating":"50","combatZone":"Yes","retirementPay":"Yes","denialLetter":"Yes","firstName":"Cecile","lastName":"Weissnat","age":"29","email":"cecile.weissnat@example.com","phone":"555-555-0182","state":"West Virginia","zip":"23101","marketingSmsConsent":false,"transactionalSmsConsent":false}
+[2026-11-22T18:49:57.646Z] [INFO] [home page -> Get Started -> fill form (no submit)] Viewport: 390x664
+[2026-11-22T18:49:57.649Z] [STEP] [home page -> Get Started -> fill form (no submit)] Opening https://www.trajectormedical.com/
+[2026-11-22T18:50:03.795Z]   step: Navigate (6143ms)
+[2026-11-22T18:50:03.796Z]   step: Navigate to trajectormedical.com (6145ms)
+[2026-11-22T18:50:03.872Z] [INFO] [home page -> Get Started -> fill form (no submit)] Landed on https://www.trajectormedical.com/ — title "Medical Evidence To Support Your Disability Claim - Trajector Medical"
+[2026-11-22T18:50:03.873Z]   step: Confirm we landed on trajectormedical.com (78ms)
+[2026-11-22T18:50:03.872Z] [STEP] [home page -> Get Started -> fill form (no submit)] Clicking "Get Started"
+[2026-11-22T18:50:03.990Z]   step: Click (117ms)
+[2026-11-22T18:50:04.933Z] [INFO] [home page -> Get Started -> fill form (no submit)] Arrived at https://www.trajectormedical.com/lpg/get-started-today/
+[2026-11-22T18:50:04.933Z]   step: Click "Get Started" and arrive at the form page (1061ms)
+[2026-11-22T18:50:04.933Z] [STEP] [home page -> Get Started -> fill form (no submit)] Filling form for Cecile Weissnat
+[2026-11-22T18:50:04.933Z] [STEP] [home page -> Get Started -> fill form (no submit)] Served in military: Yes
+[2026-11-22T18:50:05.046Z]   step: Check (110ms)
+[2026-11-22T18:50:05.136Z] [STEP] [home page -> Get Started -> fill form (no submit)] VA disability rating: 50
+[2026-11-22T18:50:05.163Z]   step: Select option (25ms)
+[2026-11-22T18:50:05.163Z] [STEP] [home page -> Get Started -> fill form (no submit)] Combat zone: Yes
+[2026-11-22T18:50:05.208Z]   step: Check (43ms)
+[2026-11-22T18:50:05.217Z] [STEP] [home page -> Get Started -> fill form (no submit)] Military retirement pay: Yes
+[2026-11-22T18:50:05.237Z]   step: Check (19ms)
+[2026-11-22T18:50:05.245Z] [STEP] [home page -> Get Started -> fill form (no submit)] VA denial letter: Yes
+[2026-11-22T18:50:05.268Z]   step: Check (22ms)
+[2026-11-22T18:50:05.303Z] [STEP] [home page -> Get Started -> fill form (no submit)] Name: Cecile Weissnat
+[2026-11-22T18:50:05.363Z]   step: Fill "Cecile" (45ms)
+[2026-11-22T18:50:05.391Z]   step: Fill "Weissnat" (28ms)
+[2026-11-22T18:50:05.391Z] [STEP] [home page -> Get Started -> fill form (no submit)] Age: 29
+[2026-11-22T18:50:05.408Z]   step: Select option (17ms)
+[2026-11-22T18:50:05.408Z] [STEP] [home page -> Get Started -> fill form (no submit)] Email: cecile.weissnat@example.com
+[2026-11-22T18:50:05.428Z]   step: Fill "cecile.weissnat@example.com" (18ms)
+[2026-11-22T18:50:05.428Z] [STEP] [home page -> Get Started -> fill form (no submit)] Phone: 555-555-0182
+[2026-11-22T18:50:05.554Z]   step: Click (125ms)
+[2026-11-22T18:50:05.595Z]   step: Type "5555550182" (40ms)
+[2026-11-22T18:50:05.595Z] [STEP] [home page -> Get Started -> fill form (no submit)] Location: West Virginia 23101
+[2026-11-22T18:50:05.611Z]   step: Select option (15ms)
+[2026-11-22T18:50:05.627Z]   step: Fill "23101" (16ms)
+[2026-11-22T18:50:05.627Z] [STEP] [home page -> Get Started -> fill form (no submit)] SMS consent: marketing=false, transactional=false
+[2026-11-22T18:50:05.636Z]   step: Uncheck (8ms)
+[2026-11-22T18:50:05.646Z]   step: Uncheck (9ms)
+[2026-11-22T18:50:05.647Z]   step: Fill the form with randomly generated data (713ms)
+[2026-11-22T18:50:05.707Z] [INFO] [home page -> Get Started -> fill form (no submit)] Form populated and verified. Submit intentionally NOT clicked.
+[2026-11-22T18:50:05.707Z]   step: Verify the form holds the generated values (NOT submitted) (60ms)
+[2026-11-22T18:50:05.962Z]   step: Close context (110ms)
+[2026-11-22T18:50:05.967Z] [INFO] [home page -> Get Started -> fill form (no submit)] Video saved to /Users/pallavibansal/trajector-playwright-smoke/videos/home-page-get-started-fill-form-no-submit--2026-11-22T18-50-05-961Z.webm
+[2026-11-22T18:50:05.976Z] --- TEST END: home page -> Get Started -> fill form (no submit) -> PASSED in 8657ms
+[2026-11-22T18:50:05.976Z]   attachment [video]: /Users/pallavibansal/trajector-playwright-smoke/test-results/get-started.smoke-Trajecto-78148-rted---fill-form-no-submit--mobile-chromium/video.webm
+[2026-11-22T18:50:06.091Z] === Test run finished: PASSED ===
