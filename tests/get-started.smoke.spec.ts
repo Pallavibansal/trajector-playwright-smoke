@@ -2,7 +2,7 @@ import { test, expect } from '../fixtures/formData.fixture';
 import { GET_STARTED_URL } from '../pages/GetStartedPage';
 import { fillGetStartedForm, expectFormToContain } from '../helpers/formHelper';
 
-test.describe('Trajector Medical smoke test (mobile)', () => {
+test.describe('Trajector Medical smoke test (desktop)', () => {
   test('home page -> Get Started -> fill form (no submit)', async ({
     page,
     homePage,
@@ -12,7 +12,7 @@ test.describe('Trajector Medical smoke test (mobile)', () => {
   }) => {
     const viewport = page.viewportSize();
     log.info(`Viewport: ${viewport?.width}x${viewport?.height}`);
-    expect(viewport!.width).toBeLessThan(500);
+    expect(viewport).toEqual({ width: 1920, height: 1080 });
 
     await test.step('Navigate to trajectormedical.com', async () => {
       log.step('Opening https://www.trajectormedical.com/');

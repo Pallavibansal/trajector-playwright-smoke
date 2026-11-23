@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 /**
  * Smoke-test configuration for trajectormedical.com.
- *  - Mobile viewport (iPhone 13 emulation: 390x844, touch, mobile UA)
+ *  - Full-size desktop viewport (1920x1080)
  *  - Video recorded for every test run
  *  - Full test log written to ./logs by a custom reporter
  */
@@ -21,6 +21,8 @@ export default defineConfig({
   ],
   use: {
     baseURL: 'https://www.trajectormedical.com',
+    browserName: 'chromium',
+    viewport: { width: 1920, height: 1080 },
     video: 'on',
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
@@ -29,12 +31,8 @@ export default defineConfig({
   },
   projects: [
     {
-      name: 'mobile-chromium',
-      use: {
-        ...devices['iPhone 13'],
-        // Run the iPhone profile on Chromium so only one browser install is required.
-        browserName: 'chromium',
-      },
+      name: 'desktop-chromium',
+      use: {},
     },
   ],
 });

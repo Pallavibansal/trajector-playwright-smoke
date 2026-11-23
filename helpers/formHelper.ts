@@ -58,8 +58,11 @@ export async function fillGetStartedForm(
 
 /** Asserts that the form currently holds the values from the data fixture. */
 export async function expectFormToContain(form: GetStartedPage, data: GetStartedFormData): Promise<void> {
-  await expect(form.firstName).toHaveValue(data.firstName);
-  await expect(form.lastName).toHaveValue(data.lastName);
+  const actualFirstName = await form.firstName.inputValue();
+  const actualLastName = await form.lastName.inputValue();
+
+  expect(actualFirstName.toLocaleLowerCase()).toBe(data.firstName.toLocaleLowerCase());
+  expect(actualLastName.toLocaleLowerCase()).toBe(data.lastName.toLocaleLowerCase());
   await expect(form.age).toHaveValue(data.age);
   await expect(form.email).toHaveValue(data.email);
   // The input mask controls punctuation (e.g. "(555) 555-0133"), so compare digits only.

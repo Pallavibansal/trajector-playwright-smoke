@@ -1,6 +1,6 @@
 # Trajector Medical – Playwright Smoke Test
 
-An automated smoke test for [trajectormedical.com](https://www.trajectormedical.com). It runs in a **mobile viewport** and:
+An automated smoke test for [trajectormedical.com](https://www.trajectormedical.com). It runs in a **1920×1080 desktop viewport** and:
 
 1. Opens `https://www.trajectormedical.com/` and checks the URL and page title.
 2. Taps **Get Started** and checks that it arrives at `https://www.trajectormedical.com/lpg/get-started-today/`.
@@ -21,7 +21,7 @@ An automated smoke test for [trajectormedical.com](https://www.trajectormedical.
 | Random first and last name each run | `@faker-js/faker` in `buildFormData()` |
 | Test log saved to a file | [`reporters/file-logger-reporter.ts`](reporters/file-logger-reporter.ts) → `logs/test-run-<timestamp>.log` |
 | Video of the test run | `video: 'on'` in config, plus the `saveVideo` fixture → `videos/*.webm` |
-| Mobile viewport | `devices['iPhone 13']` (390×844, touch, mobile UA) in [`playwright.config.ts`](playwright.config.ts) |
+| Desktop viewport | `viewport: { width: 1920, height: 1080 }` in [`playwright.config.ts`](playwright.config.ts) |
 | Do **not** submit the form | Submit is never clicked; the `blockFormSubmission` fixture aborts any POST |
 
 ## Project structure
